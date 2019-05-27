@@ -1,0 +1,19 @@
+.ticket-filter-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+
+  .filter-item{
+
+    .filter-menu{
+      list-style-type: none;
+      text-align: right;
+
+      li{
+        display: inline-block;
+        padding-left: 10px;
+      }
+    }
+  }
+}

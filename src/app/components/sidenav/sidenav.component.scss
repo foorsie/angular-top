@@ -1,0 +1,47 @@
+@import '../../../styles/main.scss';
+
+.nav-wrapper{
+
+  figure{
+    padding: 10px;
+    margin: 0;
+
+    img{
+      max-width: 100%;
+    }
+  }
+
+  .main-navigation{
+    padding: 0;
+    margin: 0;
+    padding-top: 2em;
+
+    li{
+      color: darken($grey-light, 30%);
+      border-bottom: 1px solid $grey-darkest;
+      list-style-type: none;
+      line-height: 3em;
+      padding-left: 20px;
+      font-size: 14px;
+
+      i{
+        margin-right: 8px;
+      }
+
+
+      &.active{
+        color: $white;
+        border-left: 5px solid $blue;
+        transition: 500ms ease-in-out;
+      }
+
+      &:hover {
+        padding-left: 30px;
+        color: $white;
+        border-left: 5px solid $blue;
+        transition: 500ms all;
+        }
+    }
+
+  }
+}

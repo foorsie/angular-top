@@ -1,0 +1,14 @@
+@import '../../../styles/main.scss';
+
+.header-wrapper {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: left;
+  padding: 0 30px;
+
+  .searchbox{
+    margin-top: 6px;
+    width: 300px;
+  }
+}

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,500,700,900&display=swap');
+@import 'colors';
+
+
+$heading: 'Roboto', sans-serif;
+$paragraph: 'Lato', sans-serif;
+
+// font-weights:
+$light: 400;
+$semibold: 500;
+$bold: 700;
+$xbols: 900;
+
+// transform styles:
+$uppercase: uppercase;
+$lowercase: lowercase;
+
+
+
+body {
+  font-family: $paragraph;
+  font-weight: $light;
+  color: $grey-dark; //color variable set elsewhere
+  -webkit-text-size-adjust: 100%; //fix for iOS
+  text-rendering: optimizeLegibility;
+}
+
+
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  color: $blue;
+  size: 28px;
+  text-transform: $uppercase;
+}
+
+h2{
+  font-family: 'Roboto', sans-serif;
+  color: $grey-dark;
+  size: 20px;
+}
+
+h3{
+  font-family: 'Roboto', sans-serif;
+  color: $grey-dark;
+  size: 18px;
+  margin: 5px 0;
+}
+
+h4{
+  font-family: 'Roboto', sans-serif;
+  color: $grey-dark;
+  size: 16px;
+  margin: 0;
+}
+
+h5{
+  font-family: 'Roboto', sans-serif;
+  color: $grey-dark;
+  size: 14px;
+  margin: 0;
+}
+
+h6{
+  font-family: 'Roboto', sans-serif;
+  color: $grey-dark;
+  font-weight: $light;
+  size: 12px;
+  margin: 0;
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+  color: $grey-dark;
+  font-size: 14px;
+  margin: 0;
+  line-height: 16px;
+  padding: 0;
+}
+
+.small{
+  font-size: 12px;
+}
+
+

@@ -1,0 +1,66 @@
+
+<div *ngIf="ticketStyle != 'grid' " class="ticket-single">
+    <div class="ticket-top">
+      <div class="ticket-section status">
+        <i class="fa fa-check-circle"></i>
+      </div>
+      <div class="ticket-section ticket-no">
+        <h4>Ticket No {{ ticket.number}}</h4>
+        <p class="small">{{ ticket.descriptionGeneric }} | {{ ticket.descriptionSpesific }}</p>
+      </div>
+      <div class="ticket-section assignment">
+          <h6>Reassigned retailer</h6>
+          <h5> {{ ticket.retailerCode }} - {{ ticket.retailer}}</h5>
+        </div>
+    </div>
+    <div class="ticket-bottom">
+        <div class="ticket-info" >
+            <!-- <h5>{{ ticket.vehicleInfo.brand }}</h5> -->
+            <img *ngIf="ticket.vehicleInfo.brand === 'BMW'" src="../../../../assets/bmw.svg" alt="">
+            <img *ngIf="ticket.vehicleInfo.brand === 'MINI'" src="../../../../assets/mini.svg" alt="">
+            <img *ngIf="ticket.vehicleInfo.brand != 'MINI' && ticket.vehicleInfo.brand != 'BMW'" src="../../../../assets/bmw-i.svg" alt="">
+
+          </div>
+        <div class="ticket-info">
+          <h5>{{ ticket.vehicleInfo.chassisNumber }}</h5>
+        </div>
+        <div class="ticket-info">
+            <h5>{{ ticket.closureDate | date:'longDate' }}</h5>
+        </div>
+        <div class="ticket-info">
+            <h5>{{ ticket.closedBy }}</h5>
+        </div>
+        <div class="ticket-info">
+            <h5>{{ ticket.vehicleInfo.serviceType }}</h5>
+        </div>
+    </div>
+</div>
+
+
+
+ <div *ngIf="ticketStyle === 'grid' " class="grid-card-container">
+
+  <div class="ticket-single-card">
+      <div class="ticket-card-header">
+        <div class="card-header-item">
+          <h6>12 November 2016</h6>
+        </div>
+        <div class="card-header-item card-header-date">
+          <h6>DONE</h6>
+        </div>
+      </div>
+
+      <div class="ticket-card-body">
+          <h4>Ticket No 66585411</h4>
+          <h6>Lorem ipsum dolor sit amet. | Consectetur adipisicing elit.</h6>
+      </div>
+
+      <div class="ticket-card-footer">
+
+      </div>
+  </div>
+
+
+
+
+</div>

@@ -1,0 +1,46 @@
+@import 'colors.scss';
+@import 'mixins.scss';
+@import 'fonts.scss';
+
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 3px 2px 0;
+  border: solid 2px transparent;
+  padding: 0.70em 2em;
+  color: #ffffff;
+  background-color: $blue;
+  outline: none;
+  text-transform: uppercase;
+  font-family: $paragraph;
+
+  &:hover {
+  background-color: darken( $blue, 10% );
+  transition: 150ms all;
+  }
+
+  &::-moz-focus-inner {
+    border: none;
+  }
+
+}
+
+.full{
+  width: 100%;
+}
+
+
+.secondary{
+  background: transparent;
+  border: 2px solid $blue;
+  color: $blue;
+
+  &:hover{
+    background: $blue;
+    transition: 150ms all;
+    color: $white;
+    border: solid 2px transparent;
+  }
+}

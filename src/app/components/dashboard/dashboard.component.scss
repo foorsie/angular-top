@@ -1,0 +1,39 @@
+@import '../../../styles/main.scss';
+
+.grid-container{
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-columns: 180px 1fr;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav main";
+  height: 100vh;
+  transition: 200ms all;
+
+
+  #header{
+    grid-area: header;
+    background: $white;
+    box-shadow: 2px 2px 2px $grey-light;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #sidenav{
+    grid-area: sidenav;
+    background: $grey-dark;
+  }
+
+  #content-main{
+    grid-area: main;
+    background: $grey-lightest;
+    padding: 2rem;
+
+  }
+
+}
+
+.grid-collapsed {
+  grid-template-columns: 50px 1fr;
+  transition: 200ms all;
+}

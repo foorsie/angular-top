@@ -1,0 +1,25 @@
+.input-default {
+    background: #fff;
+    border-radius: 100px;
+    color: #fff;
+    padding: 8px 20px;
+    width: 250px;
+    border: 2px solid $grey-light;
+}
+
+input{
+  color: $white;
+  font-size: 14px;
+
+  &:focus,
+  &:active{
+    background: $white;
+  }
+
+}
+
+::placeholder {
+  color: lighten($grey, 40%);
+  opacity: 1;
+  font-family: $paragraph;
+}

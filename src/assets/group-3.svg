@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="184" height="36" viewBox="0 0 184 36">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#323232">
+            <text font-family="BMWGroup-Bold, BMW Group" font-size="16" font-weight="bold" letter-spacing=".48" transform="translate(42 3)">
+                <tspan x="0" y="15">TELESERVICE</tspan>
+            </text>
+            <text font-family="BMWGroup-Regular, BMW Group" font-size="10" letter-spacing=".675" transform="translate(42 3)">
+                <tspan x="1" y="27">INFORMATION PLATFORM</tspan>
+            </text>
+        </g>
+        <circle cx="18" cy="18" r="18" fill="#323232"/>
+        <g fill-rule="nonzero">
+            <path fill="#FFF" d="M28.094 10h-5.807C18.263 10 15 13.464 15 17.736V25.945C15 27.08 15.867 28 16.935 28c1.07 0 1.936-.92 1.936-2.055V17.86v-.124c0-1.986 1.516-3.596 3.387-3.596h5.807c1.068 0 1.935-.92 1.935-2.054 0-1.135-.867-2.055-1.935-2.055l.029-.031z"/>
+            <path fill="#FECC07" d="M18 10H8.277C7.019 10 6 10.895 6 12s1.02 2 2.277 2H14.3c.771-1.617 2.056-3.006 3.7-4z"/>
+        </g>
+    </g>
+</svg>
