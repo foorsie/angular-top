@@ -1,20 +1,117 @@
+// export interface Ticket {
+
+//   // type: string,
+//   // number: string,
+//   // retailer?: string,
+//   // retailerCode?: string,
+//   // descriptionGeneric?: string,
+//   // descriptionSpesific?: string,
+//   // createdDate: string,
+//   // closureDate: string,
+//   // closedBy?: string,
+//   // vehicleInfo: {
+//   //   brand: string,
+//   //   vehicle: string,
+//   //   chassisNumber: string,
+//   //   serviceType: string,
+//   // }
+
+
+// }
+
 export interface Ticket {
-
-  type: string,
-  number: string,
-  retailer?: string,
-  retailerCode?: string,
-  descriptionGeneric?: string,
-  descriptionSpesific?: string,
-  createdDate: string,
-  closureDate: string,
-  closedBy?: string,
-  vehicleInfo: {
-    brand: string,
-    vehicle: string,
-    chassisNumber: string,
-    serviceType: string,
-  }
-
-
+  id: number,
+  ticketID: number,
+  vinShort: string,
+  vinLongPrefix: string,
+  partnerNumber: number,
+  outletNumber: string,
+  buNumber: null,
+  brand: string,
+  countryCode: string,
+  ticketType: string,
+  ticketState: string,
+  tipStatus: string,
+  classification : string,
+  ticketPriority : string,
+  contactPriority : null,
+  createTimestamp : string,
+  escalationTimestamp : string,
+  guid : null,
+  closureDate : string,
+  dueDate : null,
+  keyInfo : {
+    id : number,
+    ticketID : number,
+    mileage : number,
+    averageDistance : number,
+    coolantTemperature : number,
+    outsideTemperature : number,
+    fuelTankLevel : number,
+    batteryVoltage : number,
+    keyReadInDate : string,
+    model : string,
+    colourCode : string,
+    upholstery : string,
+    firstRegistration : string,
+    checkControlMessages : [ ],
+    conditionBasedServices : [ ]
+  },
+  accidentInfo : null,
+  driverInfo : null,
+  customer : null,
+  assignedDealer : {
+    id : number,
+    ticketID : number,
+    dealerName : string,
+    dealerPartnerNo : string,
+    dealerSubsidiaryNo : string,
+    street : string,
+    zipCode : string,
+    city : string,
+    state : string,
+    countryCodeISO : string,
+    portfolioCode : string,
+    portfolioName : string,
+    businessPartnerID : string,
+    email : null,
+    businessFax : string,
+    businessPhone : string
+  },
+  homeDealer : {
+    id : number,
+    ticketID : number,
+    dealerName : string,
+    dealerPartnerNo : string,
+    dealerSubsidiaryNo : string,
+    street : string,
+    zipCode : string,
+    city : string,
+    state : string,
+    countryCodeISO : string,
+    portfolioCode : string,
+    portfolioName : string,
+    businessPartnerID :string,
+    email : null,
+    businessFax : string,
+    businessPhone : string
+  },
+  resolutionReason : {
+    id : number,
+    description : string,
+    ticketState : string,
+    cancellationReasonId : number,
+    ticketResolutionId : number,
+    ticketResolutionDescription : string,
+    ticketResolutionKpiCode : string
+  },
+  lessor : {
+    id : number,
+    name : string
+  },
+  retailer : null,
+  agentNumber : string,
+  agentName : string,
+  pendingRemarks : null
 }
+

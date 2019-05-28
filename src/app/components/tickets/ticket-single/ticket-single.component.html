@@ -1,37 +1,37 @@
 
 <div *ngIf="ticketStyle != 'grid' " class="ticket-single">
     <div class="ticket-top">
-      <div class="ticket-section status">
-        <i class="fa fa-check-circle"></i>
-      </div>
+      <div class="ticket-section status bg-green">
+         {{ ticket.tipStatus}}
+       </div>
       <div class="ticket-section ticket-no">
-        <h4>Ticket No {{ ticket.number}}</h4>
-        <p class="small">{{ ticket.descriptionGeneric }} | {{ ticket.descriptionSpesific }}</p>
+        <h4>Ticket No {{ ticket.ticketID }}</h4>
+        <p class="small">  {{ticket.resolutionReason.ticketResolutionDescription}} | {{ticket.resolutionReason.description}} </p>
       </div>
       <div class="ticket-section assignment">
           <h6>Reassigned retailer</h6>
-          <h5> {{ ticket.retailerCode }} - {{ ticket.retailer}}</h5>
+          <h5>  {{ticket.assignedDealer.dealerPartnerNo}} -  {{ticket.assignedDealer.dealerName}}</h5>
         </div>
     </div>
     <div class="ticket-bottom">
         <div class="ticket-info" >
-            <!-- <h5>{{ ticket.vehicleInfo.brand }}</h5> -->
-            <img *ngIf="ticket.vehicleInfo.brand === 'BMW'" src="../../../../assets/bmw.svg" alt="">
+            <!-- <h5> ticket.vehicleInfo.brand </h5> -->
+            <!-- <img *ngIf="ticket.vehicleInfo.brand === 'BMW'" src="../../../../assets/bmw.svg" alt="">
             <img *ngIf="ticket.vehicleInfo.brand === 'MINI'" src="../../../../assets/mini.svg" alt="">
-            <img *ngIf="ticket.vehicleInfo.brand != 'MINI' && ticket.vehicleInfo.brand != 'BMW'" src="../../../../assets/bmw-i.svg" alt="">
-
+            <img *ngIf="ticket.vehicleInfo.brand != 'MINI' && ticket.vehicleInfo.brand != 'BMW'" src="../../../../assets/bmw-i.svg" alt=""> -->
+            {{ ticket.brand }}
           </div>
         <div class="ticket-info">
-          <h5>{{ ticket.vehicleInfo.chassisNumber }}</h5>
+          <h5> {{ticket.vinShort}}{{ticket.vinLongPrefix}} </h5>
         </div>
         <div class="ticket-info">
-            <h5>{{ ticket.closureDate | date:'longDate' }}</h5>
+          <h5> {{ticket.closureDate | date:'longDate'}} </h5>
         </div>
         <div class="ticket-info">
-            <h5>{{ ticket.closedBy }}</h5>
+            <h5> {{ ticket.agentName }} </h5>
         </div>
         <div class="ticket-info">
-            <h5>{{ ticket.vehicleInfo.serviceType }}</h5>
+            <h5> {{ticket.ticketType}} </h5>
         </div>
     </div>
 </div>

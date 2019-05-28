@@ -10,14 +10,14 @@ import { Ticket } from '../../models/Ticket';
 export class TicketsComponent implements OnInit {
 
   tickets: Ticket[];
-  // ticketStyle: string = 'grid';
+  ticketStyle: string = 'grid';
 
   constructor(private dataService: DataService ) { }
 
   ngOnInit() {
 
       this.tickets = this.dataService.getTickets();
-      console.log(this.tickets);
+
   }
 
 }
