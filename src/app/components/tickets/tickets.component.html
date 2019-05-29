@@ -1,9 +1,12 @@
 
 <div class="tickets-list-container">
   <h1>All Tickets</h1>
+
   <app-tickets-filter></app-tickets-filter>
+
   <app-ticket-single
     *ngFor="let ticketEl of tickets"
     [ticket]="ticketEl">
   </app-ticket-single>
+
 </div>

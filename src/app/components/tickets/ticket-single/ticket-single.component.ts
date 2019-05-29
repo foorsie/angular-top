@@ -10,12 +10,15 @@ import { Ticket} from '../../../models/Ticket';
 export class TicketSingleComponent implements OnInit {
 
   @Input() ticket: Ticket;
+  @Input() ticketStyle: string;
 
-  ticketStyle: string = 'list';
+
+
 
   constructor() { }
 
   ngOnInit() {
+    console.log(this.ticketStyle);
   }
 
 }

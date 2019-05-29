@@ -7,7 +7,7 @@
 
 .ticket-top{
   display: grid;
-  grid-template-columns: 50px 1fr 1fr;
+  grid-template-columns: 100px 1fr 1fr;
   background: $white;
   padding: 10px 10px 10px 0;
   justify-content: center;
@@ -20,11 +20,13 @@
   .status{
     align-items: center;
     justify-content: center;
-    width: 20px;
-    margin-left: 14px;
-    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 20px;
+    text-align: left;
+    padding: 3px 10px;
 
-    h6{
+    h6 {
       background: $green;
       border-radius: 100px;
       padding: 5px 0 3px 0;
@@ -37,6 +39,11 @@
 
 }
 
+.bg-green {
+  background: $green;
+}
+
+
 .ticket-bottom {
   display: grid;
   box-shadow: 1px 1px 1px $grey-light;
@@ -44,7 +51,7 @@
   grid-template-columns:  50px auto auto auto auto auto;
   justify-content: left;
   align-items: center;
-  padding-left: 41px;
+  padding-left: 91px;
 
 
 
